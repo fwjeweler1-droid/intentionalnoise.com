@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://intentionalnoise.com/sitemap.xml
