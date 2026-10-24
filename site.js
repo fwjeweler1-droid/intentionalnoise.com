@@ -1,7 +1,7 @@
 "use strict";
 // Preserve links to sections of the former single-page site.
 if (location.pathname.endsWith("/") || location.pathname.endsWith("/index.html")) {
-  const legacy = {"#about":"about.html", "#music":"music.html", "#merch":"merch.html", "#connect":"about.html#connect", "#contact":"about.html#contact"};
+  const legacy = {"#about":"about.html", "#music":"music.html", "#merch":"merch.html", "#connect":"about.html#connect", "#contact":"contact.html#contact"};
   if (legacy[location.hash]) location.replace(legacy[location.hash]);
 }
 const contact = document.getElementById("contact-form");
@@ -24,3 +24,5 @@ if (contact) {
     contact.addEventListener("submit", event => event.preventDefault());
   }
 }
+
+if (location.pathname.endsWith("/about.html") && location.hash === "#contact") location.replace("contact.html#contact");
