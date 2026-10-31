@@ -1,0 +1,4 @@
+# Website release-status maintenance SOP
+Before every intentionalnoise.com maintenance session, inspect the featured release and reconcile current store status using owner confirmation, DistroKid email, or store listing evidence. Check Spotify, Apple Music/iTunes, Amazon Music, and YouTube Music separately. Update featured copy and links if stale. Use exact verified release URLs when available; otherwise use official artist pages, or clearly labeled search discovery links. Never call a search result a verified track link. Preserve artwork. Commit and read back files after changes.
+
+October 30, 2026: Owner confirms Prejudices live on all four platforms. Spotify release URL pending (artist fallback); Apple Music album URL recorded; Amazon artist fallback; YouTube Music search discovery pending exact release URL.
