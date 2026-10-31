@@ -10,8 +10,8 @@ const artist={spotify:"https://open.spotify.com/artist/0imYJQbLblaUpJ3erUj6Ju",a
 const id=new URLSearchParams(location.search).get("release");
 const release=releases.find(x=>x.id===id);
 document.getElementById("heading").textContent=release?release.title+" — Choose where to listen":"Intentional Noise — Choose where to listen";
-const services=[["Spotify",release?.spotify||artist.spotify],["Apple Music / iTunes",release?.apple||""],["Amazon Music",artist.amazon],["YouTube Music",""]];
+const services=[["Spotify",release?.spotify||artist.spotify],["Apple Music / iTunes",release?.apple||""],["Amazon Music",artist.amazon],["YouTube Music",release?.id==="16"?"https://music.youtube.com/search?q=Intentional+Noise+Prejudices":""]];
 const box=document.getElementById("services");
 for(const [name,url] of services){if(url){const a=document.createElement("a");a.href=url;a.target="_blank";a.rel="noopener noreferrer";a.textContent=name;box.append(a);}else{const span=document.createElement("span");span.textContent=name+" — link pending";span.style.cssText="opacity:.65;padding:10px";box.append(span);}}
-document.getElementById("note").textContent="Prejudices is confirmed released on all four platforms. Amazon Music currently opens the artist page; YouTube Music link is awaiting its verified URL.";
+document.getElementById("note").textContent="Prejudices is confirmed released on all four platforms. Amazon Music currently opens the artist page; YouTube Music opens a title search until the exact release URL is verified.";
 </script></body></html>
