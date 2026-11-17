@@ -21,6 +21,15 @@
   <link rel="stylesheet" href="styles.css">
   <script src="site.js" defer></script>
   
+<style>
+    .tg-track-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin:22px 0}
+    .tg-track{display:grid;grid-template-columns:96px minmax(0,1fr);gap:14px;align-items:start;padding:15px;background:#252019;color:#f5ebd8;border:1px solid #6b5336;border-radius:12px}
+    .tg-track img{width:96px;height:96px;object-fit:cover;border-radius:7px;user-select:none;-webkit-user-drag:none}
+    .tg-track h3{font-size:1.06rem;color:#f5ebd8;margin:5px 0 10px;line-height:1.3}
+    .tg-no{font-size:.72rem;font-weight:750;letter-spacing:.1em;color:#d3b786}
+    .tg-track audio{display:block;width:100%;min-width:0;max-width:100%;height:44px}
+    @media(max-width:380px){.tg-track{grid-template-columns:72px minmax(0,1fr)}.tg-track img{height:72px;width:72px}}
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -30,7 +39,7 @@
   </header>
   
   <main id="main" tabindex="-1"><h1>Music</h1>
-  <nav class="category-nav" aria-label="Music categories"><a href="#thanksgiving-cd">FREE Thanksgiving CD</a><a href="#latest-release">Latest release</a><a href="#new-and-pre-release">Prejudices</a><a href="#released">More released music</a></nav>
+  <nav class="category-nav" aria-label="Music categories"><a href="#thanksgiving-cd">FREE Thanksgiving CD</a><a href="#newly-released-thanksgiving">Newly released — listen</a><a href="#latest-release">Latest release</a><a href="#new-and-pre-release">Prejudices</a><a href="#released">More released music</a></nav>
   <section id="thanksgiving-cd" aria-labelledby="thanksgiving-cd-heading">
     <h2 id="thanksgiving-cd-heading">FREE CD / LISTEN FREE</h2>
     <article class="featured-release">
@@ -47,6 +56,17 @@
         <p class="small">No digital download of the Thanksgiving CD is offered before the end of the giveaway. Full-track playback on the artist showcase is a separate feature.</p>
       </div>
     </article>
+  </section>
+  <section id="newly-released-thanksgiving" aria-labelledby="thanksgiving-player-heading">
+    <h2 id="thanksgiving-player-heading">Newly Released — Thanksgiving CD Listening Room</h2>
+    <p>Listen free to all six songs from <em>The Thankful Thanksgiving Thank You Album (2026)</em>. The physical CD is free through December 31, 2026, with U.S. shipping and handling of $7, plus applicable tax. No album downloads are offered during the giveaway.</p>
+    <div class="tg-track-grid"><article class="tg-track"><img src="assets/thanksgiving/covers/01.webp" alt="Sittin’ on the Fence — approved cover art" loading="lazy" width="128" height="128" draggable="false"><div><span class="tg-no">TRACK 01</span><h3>Sittin’ on the Fence</h3><audio controls controlslist="nodownload noplaybackrate" disablepictureinpicture preload="none" src="https://xyudcdgjyormlokwhfoi.supabase.co/functions/v1/thanksgiving-cd-listen?track=1" aria-label="Listen to Sittin’ on the Fence"></audio></div></article>
+<article class="tg-track"><img src="assets/thanksgiving/covers/02.webp" alt="The Words in RED — approved cover art" loading="lazy" width="128" height="128" draggable="false"><div><span class="tg-no">TRACK 02</span><h3>The Words in RED</h3><audio controls controlslist="nodownload noplaybackrate" disablepictureinpicture preload="none" src="https://xyudcdgjyormlokwhfoi.supabase.co/functions/v1/thanksgiving-cd-listen?track=2" aria-label="Listen to The Words in RED"></audio></div></article>
+<article class="tg-track"><img src="assets/thanksgiving/covers/03.webp" alt="Beautiful Chapters Still to Come — approved cover art" loading="lazy" width="128" height="128" draggable="false"><div><span class="tg-no">TRACK 03</span><h3>Beautiful Chapters Still to Come</h3><audio controls controlslist="nodownload noplaybackrate" disablepictureinpicture preload="none" src="https://xyudcdgjyormlokwhfoi.supabase.co/functions/v1/thanksgiving-cd-listen?track=3" aria-label="Listen to Beautiful Chapters Still to Come"></audio></div></article>
+<article class="tg-track"><img src="assets/thanksgiving/covers/04.webp" alt="Moonie’s Earworm — approved cover art" loading="lazy" width="128" height="128" draggable="false"><div><span class="tg-no">TRACK 04</span><h3>Moonie’s Earworm</h3><audio controls controlslist="nodownload noplaybackrate" disablepictureinpicture preload="none" src="https://xyudcdgjyormlokwhfoi.supabase.co/functions/v1/thanksgiving-cd-listen?track=4" aria-label="Listen to Moonie’s Earworm"></audio></div></article>
+<article class="tg-track"><img src="assets/thanksgiving/covers/05.webp" alt="My 2nd Letter to the Lofties — approved cover art" loading="lazy" width="128" height="128" draggable="false"><div><span class="tg-no">TRACK 05</span><h3>My 2nd Letter to the Lofties</h3><audio controls controlslist="nodownload noplaybackrate" disablepictureinpicture preload="none" src="https://xyudcdgjyormlokwhfoi.supabase.co/functions/v1/thanksgiving-cd-listen?track=5" aria-label="Listen to My 2nd Letter to the Lofties"></audio></div></article>
+<article class="tg-track"><img src="assets/thanksgiving/covers/06.webp" alt="Do You Get It Yet? — approved cover art" loading="lazy" width="128" height="128" draggable="false"><div><span class="tg-no">TRACK 06</span><h3>Do You Get It Yet?</h3><audio controls controlslist="nodownload noplaybackrate" disablepictureinpicture preload="none" src="https://xyudcdgjyormlokwhfoi.supabase.co/functions/v1/thanksgiving-cd-listen?track=6" aria-label="Listen to Do You Get It Yet?"></audio></div></article></div>
+    <p class="small">Personal listening only. No audio download buttons or full-resolution artwork. As with any web player, recording or copying cannot be technically prevented.</p>
   </section>
   <section id="new-and-pre-release" aria-labelledby="new-heading">
     <h2 id="new-heading">Featured release</h2>
